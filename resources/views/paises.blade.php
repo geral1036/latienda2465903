@@ -12,22 +12,22 @@
     <table class="table table-bordered table-stripered">
         <thead>
             <tr>
-                <th>nombre</th>
-                <th>capital</th>
-                <th>moneda</th>
-                <th>poblacion</th>
-                <th >ciudades</th>
+                <th style="color: yellow;">nombre</th>
+                <th style="color: rgb(0, 255, 21);">capital</th>
+                <th style="color: rgb(25, 0, 255);">moneda</th>
+                <th style="color: rgb(255, 0, 128);">poblacion</th>
+                <th style="color: rgb(255, 0, 0);">ciudades</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($paises as $pais => $infopais)
             <tr>
-                <td rowspan='{{ count($infopais["ciudades"])}}'  style="color: yellow;">{{$pais}}</td>
-                <td rowspan='{{ count($infopais["ciudades"])}}'>{{$infopais["capital"]}}</td>
-                <td rowspan='{{ count($infopais["ciudades"])}}'>{{$infopais["moneda"]}}</td>
-                <td rowspan='{{ count($infopais["ciudades"])}}'>{{$infopais["población"]}}</td>
+                <td rowspan='{{ count($infopais["ciudades"])}}' style="background-color: yellow;">{{$pais}}</td>
+                <td rowspan='{{ count($infopais["ciudades"])}}' style="background-color: rgb(0, 255, 21);">{{$infopais["capital"]}}</td>
+                <td rowspan='{{ count($infopais["ciudades"])}}' style="background-color: rgb(25, 0, 255);">{{$infopais["moneda"]}}</td>
+                <td rowspan='{{ count($infopais["ciudades"])}}' style="background-color: rgb(255, 0, 128);">{{$infopais["población"]}}</td>
                 @foreach($infopais["ciudades"] as $ciudad)
-                <th >
+                <th  style="background-color: rgb(255, 0, 0);">
                     {{$ciudad}}
                 </th>
             </tr>
