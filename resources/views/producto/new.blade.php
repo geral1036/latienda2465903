@@ -11,15 +11,27 @@
  <div class="row">
     <form class="col s12">
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s8">
           <input id="nombre" name="nombre" type="text" class="validate">
           <label for="icon_prefix">First Name</label>
         </div>
 
-        <div class="input-field col s6">
+        <div class="input-field col s8">
           <input  type="number" id="precio" name="precio" class="validate">
           <label for="icon_telephone">Precio</label>
         </div>
+
+  <div class="col s8 input-field">
+    <select>
+      
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label> Elija la marca</label>
+    
+  </div>
 
         
       </div>

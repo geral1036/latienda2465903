@@ -16,8 +16,12 @@ class MarcaFactory extends Factory
      */
     public function definition()
     {
-        return [
+
+            return [
+                'nombre'=> $this->faker->word()
+                //
+            ];
             //
-        ];
+        
     }
 }

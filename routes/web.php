@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -93,4 +94,5 @@ Route::get('prueba' , function(){
     return view('producto.new');
 });
 
+Route::resource('productos',ProductController::class);
 

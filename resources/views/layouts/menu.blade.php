@@ -23,6 +23,7 @@
        @yield('contenido')
      </div>
      <script src="{{ asset('materialize/js/materialize.js')}}"></script>
+     <script></script>
     
 </body>
 </html>
